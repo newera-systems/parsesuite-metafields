@@ -1,0 +1,31 @@
+{
+  "name": "parsesuite-metafields",
+  "version": "0.0.1",
+  "description": "A utility to decorate Parse-Server object classes, enabling getters, setters, and integration with components like DataGrids by providing field metadata.",
+  "author": "NewEra Systems, Inc.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build" : "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newera-systems/parsesuite-metafields.git"
+  },
+  "keywords": [
+    "parse-server",
+    "decorators",
+    "metadata",
+    "fields",
+    "datagrid",
+    "getters",
+    "setters"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newera-systems/parsesuite-metafields/issues"
+  },
+  "homepage": "https://github.com/newera-systems/parsesuite-metafields#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
