@@ -28,10 +28,12 @@
   "homepage": "https://github.com/newera-systems/parsesuite-metafields#readme",
   "dependencies": {
     "@goplan-finance/utils": "GoPlan-Finance/utils",
-    "parse": "^4.2.0"
+    "parse": "^4.2.0",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "@types/parse": "^3.0.6"
+    "@types/node": "^18.18.2",
+    "@types/parse": "^3.0.6",
+    "typescript": "^5.2.2"
   }
 }
