@@ -1,11 +1,17 @@
 {
   "name": "parsesuite-metafields",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A utility to decorate Parse-Server object classes, enabling getters, setters, and integration with components like DataGrids by providing field metadata.",
   "author": "NewEra Systems, Inc.",
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.json"
   },
   "repository": {
@@ -27,13 +33,17 @@
   },
   "homepage": "https://github.com/newera-systems/parsesuite-metafields#readme",
   "dependencies": {
-    "@goplan-finance/utils": "GoPlan-Finance/utils",
-    "parse": "^4.2.0",
     "reflect-metadata": "^0.1.13"
   },
+  "peerDependencies": {
+    "parse": "^4.2.0",
+    "@goplan-finance/utils": "^1.0.9"
+  },
   "devDependencies": {
+    "@goplan-finance/utils": "^1.0.9",
     "@types/node": "^18.18.2",
     "@types/parse": "^3.0.6",
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
   }
 }
