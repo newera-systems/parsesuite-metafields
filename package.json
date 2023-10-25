@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build" : "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,12 @@
     "url": "https://github.com/newera-systems/parsesuite-metafields/issues"
   },
   "homepage": "https://github.com/newera-systems/parsesuite-metafields#readme",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "@goplan-finance/utils": "GoPlan-Finance/utils",
+    "parse": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/parse": "^3.0.6"
+  }
 }
