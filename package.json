@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newera-systems/parsesuite-metafields.git"
+    "url": "git+https://github.com/newera-systems/parse-server-metafields.git"
   },
   "keywords": [
     "parse-server",
@@ -29,9 +29,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/newera-systems/parsesuite-metafields/issues"
+    "url": "https://github.com/newera-systems/parse-server-metafields/issues"
   },
-  "homepage": "https://github.com/newera-systems/parsesuite-metafields#readme",
+  "homepage": "https://github.com/newera-systems/parse-server-metafields#readme",
   "dependencies": {
     "reflect-metadata": "^0.1.13"
   },
