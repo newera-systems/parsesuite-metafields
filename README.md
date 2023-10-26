@@ -49,6 +49,8 @@ Test.register(); // Registers the class with Parse
 
 This decorator registers a field with optional configurations. It can be used to annotate properties within a `ParseModelClass`.
 
+**Automatic Getters and Setters**: One of the powerful features of the `@ParseField` decorator is its ability to automatically generate getters and setters for the annotated properties. This allows for seamless access and modification of data within a Parse Object. When you annotate a property with `@ParseField`, the decorator will create getter and setter methods that internally use Parse's `get` and `set` methods. This provides a more intuitive way to interact with the properties of a Parse Object.
+
 Example:
 
 ```typescript
@@ -67,12 +69,20 @@ class TestModel extends BaseObject {
     super(TestModel.className);
   }
 
-  @ParseField({type: 'pointer', link: UserProfile, label: 'User Profile', i18n: 'user_profile'})
+  @ParseField({
+      type: 'pointer',
+      link: UserProfile,
+      label: 'User Profile',
+      i18n: 'user_profile',
+      addGetterSetter: true, // by default, this is true, create getter and setter when the property doesn't have.
+  })
   profile: UserProfile;
 }
 ```
 
-In the above example, `TestModel` has a pointer to `UserProfile`. The `@ParseField` decorator provides metadata about the `profile` field, indicating that it's a pointer to another `ParseModelClass`.
+In the above example, `TestModel` has a pointer to `UserProfile`. The `@ParseField` decorator provides metadata about the `profile` field, indicating that it's a pointer to another `ParseModelClass`,
+and also sets up the getter and setter for it.
+- the key of the field is `profile` so the getter key will also be the same.
 
 ### Functions
 
@@ -89,6 +99,25 @@ const fields = resolveChainedFields(TestModel);
 ```
 
 In this example, calling `resolveChainedFields` on `TestModel` will return fields from both `TestModel` and `UserProfile`.
+
+### Metadata Added to the class
+
+- **ParseModel**:
+  ```typescript
+        classConstructor: ParseModelClass;
+        identifier: string;
+        label: string;
+        i18n: string;
+  ```
+- **ParseField**: Array of fields metas
+  ```typescript
+    type: string;
+    label: string;
+    i18n: string;
+    gridConfig: Partial<GridOptions>;
+    addGetterSetter?: boolean;
+    link?: ParseModelClass;
+  ```
 
 ## Contributing
 
