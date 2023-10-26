@@ -1,5 +1,5 @@
 {
-  "name": "parsesuite-metafields",
+  "name": "parse-server-metafields",
   "version": "1.0.0",
   "description": "A utility to decorate Parse-Server object classes, enabling getters, setters, and integration with components like DataGrids by providing field metadata.",
   "author": "NewEra Systems, Inc.",

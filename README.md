@@ -1,6 +1,6 @@
-<h1 align="center">parsesuite-metafields</h2>
+<h1 align="center">parse-server-metafields</h2>
 <h4 align="center">
-  <img src="https://img.shields.io/npm/v/parsesuite-metafields/latest.svg" />
+  <img src="https://img.shields.io/npm/v/parse-server-metafields/latest.svg" />
 </h4>
 
 A utility to decorate Parse-Server object classes, enabling getters, setters, and integration with components like DataGrids by providing field metadata.
@@ -10,13 +10,13 @@ A utility to decorate Parse-Server object classes, enabling getters, setters, an
 Using npm:
 
 ```bash
-npm install parsesuite-metafields
+npm install parse-server-metafields
 ```
 
 Using yarn:
 
 ```bash
-yarn add parsesuite-metafields
+yarn add parse-server-metafields
 ```
 
 ## Peer Dependencies
