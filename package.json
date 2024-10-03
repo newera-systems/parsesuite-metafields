@@ -1,6 +1,6 @@
 {
   "name": "parse-server-metafields",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility to decorate Parse-Server object classes, enabling getters, setters, and integration with components like DataGrids by providing field metadata.",
   "author": "NewEra Systems, Inc.",
   "private": false,
@@ -33,17 +33,18 @@
   },
   "homepage": "https://github.com/newera-systems/parse-server-metafields#readme",
   "dependencies": {
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.1.14"
   },
   "peerDependencies": {
-    "parse": "^4.2.0",
-    "@goplan-finance/utils": "^1.0.9"
+    "parse": "^5.3.0",
+    "@goplan-finance/utils": "^1.1.0"
   },
   "devDependencies": {
-    "@goplan-finance/utils": "^1.0.9",
-    "@types/node": "^18.18.2",
-    "@types/parse": "^3.0.6",
+    "@goplan-finance/utils": "^1.1.0",
+    "@types/node": "^20.16.10",
+    "@types/parse": "^3.0.9",
     "rimraf": "^5.0.5",
-    "typescript": "^5.2.2"
-  }
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
